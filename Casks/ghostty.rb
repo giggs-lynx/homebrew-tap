@@ -1,8 +1,8 @@
 cask "ghostty" do
-  version "1.3.2-dev,quickterm-tab"
-  sha256 "4aedb642c66a1d79b4bbbf0b63eeaafce5a85cc02f0fbffaa158eeeb65f464c4"
+  version "1.3.2-dev.20260514"
+  sha256 "28464c0ea26d3300c3be670d69b3ac1f26823dd64eb1112d895b4384b3c0e567"
 
-  url "https://github.com/giggs-lynx/ghostty/releases/download/v#{version.csv.first}-#{version.csv.second}/ghostty-macos.zip"
+  url "https://github.com/giggs-lynx/ghostty/releases/download/quickterm-tab/ghostty-macos.zip"
   name "Ghostty (Quickterm Tab)"
   desc "Terminal emulator with custom quickterm tab modifications"
   homepage "https://github.com/giggs-lynx/ghostty"
