@@ -1,6 +1,6 @@
 cask "ghostty" do
-  version "1.3.2-dev.quickterm-tab.20260514"
-  sha256 "5966127e49822786d75309a85525b137f07d80cc0c3d18afb36559ae5c4fbbfb"
+  version "1.3.2-dev.quickterm-tab.20260516"
+  sha256 "32c8b21c3dabd52f6cd3abd6868d48aa26bb688569e46d96d39a5dfab77ca308"
 
   url "https://github.com/giggs-lynx/ghostty/releases/download/quickterm-tab/ghostty-macos.zip"
   name "Ghostty (Quickterm Tab)"
