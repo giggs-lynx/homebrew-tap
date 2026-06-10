@@ -1,6 +1,6 @@
 cask "spectrawall" do
-  version "0.0.8"
-  sha256 "c290206406ef4efe8554bedbe4368b3e3c2de9b6d4131c2103ec252735ecfda7"
+  version "0.0.9"
+  sha256 "ac5e689449dd789b3608a1c9a97199c8fd9e00e4cea58f3b505c0d4723bfd31b"
 
   url "https://github.com/giggs-lynx/SpectraWall/releases/download/v#{version}/SpectraWall-#{version}.zip"
   name "SpectraWall"
