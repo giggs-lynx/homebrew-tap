@@ -1,21 +1,19 @@
 class PinentryDispatch < Formula
   desc "Route GnuPG pinentry to Touch ID locally and curses over SSH"
   homepage "https://github.com/giggs-lynx/pinentry-dispatch"
-  url "https://github.com/giggs-lynx/pinentry-dispatch/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "439e1d9f93a7f4ea2f24f6eef3c280cef03ce766c721a6ea1c44dbd64cabdba8"
+  url "https://github.com/giggs-lynx/pinentry-dispatch/releases/download/v0.1.0/pinentry-dispatch-0.1.0-aarch64-apple-darwin.tar.gz"
+  sha256 "1ae03ef5d9983709ca992064121dc9056cd2252296aa597f1498ab6cb823b746"
   license "MIT"
-  head "https://github.com/giggs-lynx/pinentry-dispatch.git", branch: "main"
 
-  depends_on "rust" => :build
-  depends_on "pinentry" # provides pinentry-curses, the SSH fallback
   depends_on :macos
+  depends_on "pinentry" # provides pinentry-curses, the SSH fallback
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "pinentry-dispatch"
   end
 
   test do
-    assert_predicate bin/"pinentry-dispatch", :exist?
+    assert_path_exists bin/"pinentry-dispatch"
     # With the curses flag set the dispatcher execs pinentry-curses, whose
     # Assuan greeting begins "OK Pleased to meet you".
     out = pipe_output("PINENTRY_USER_DATA=curses #{bin}/pinentry-dispatch", "BYE\n")
