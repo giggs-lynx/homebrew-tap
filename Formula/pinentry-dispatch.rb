@@ -2,7 +2,7 @@ class PinentryDispatch < Formula
   desc "Route GnuPG pinentry to Touch ID locally and curses over SSH"
   homepage "https://github.com/giggs-lynx/pinentry-dispatch"
   url "https://github.com/giggs-lynx/pinentry-dispatch/releases/download/v0.1.0/pinentry-dispatch-0.1.0-aarch64-apple-darwin.tar.gz"
-  sha256 "1ae03ef5d9983709ca992064121dc9056cd2252296aa597f1498ab6cb823b746"
+  sha256 "e88e5c9982100f9eda6acf30394661b5f98b4cc5e37bcd370be19c3b4596bf9d"
   license "MIT"
 
   depends_on :macos
