@@ -1,10 +1,10 @@
 # Cask for the giggs-lynx/wezterm fork (with the macOS quake/dropdown terminal).
-# This file is a template: the mac-release.yml workflow substitutes v0.1.0 and
-# ad7bdf26ed25473602ec6c876ba15890de5a89505452a7c600f128ad1886d9e5 and writes the result to giggs-lynx/homebrew-tap Casks/wezterm.rb.
+# This file is a template: the mac-release.yml workflow substitutes v0.1.1 and
+# 6cbe897a481c8a8ef5d90094b9bcdf016d7dc8806966af963fbfb465a368d4dd and writes the result to giggs-lynx/homebrew-tap Casks/wezterm.rb.
 # vim:ft=ruby:
 cask "wezterm" do
-  version "v0.1.0"
-  sha256 "ad7bdf26ed25473602ec6c876ba15890de5a89505452a7c600f128ad1886d9e5"
+  version "v0.1.1"
+  sha256 "6cbe897a481c8a8ef5d90094b9bcdf016d7dc8806966af963fbfb465a368d4dd"
 
   url "https://github.com/giggs-lynx/wezterm/releases/download/#{version}/WezTerm-macos-#{version}.zip"
   name "WezTerm (giggs-lynx quake fork)"
