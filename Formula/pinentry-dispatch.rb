@@ -1,8 +1,8 @@
 class PinentryDispatch < Formula
   desc "GnuPG pinentry that asks with Touch ID locally or a terminal prompt otherwise"
   homepage "https://github.com/giggs-lynx/pinentry-dispatch"
-  url "https://github.com/giggs-lynx/pinentry-dispatch/releases/download/v0.2.0/pinentry-dispatch-0.2.0-aarch64-apple-darwin.tar.gz"
-  sha256 "997998abf065ca4df756cb19eebbc5d07c31826bebf0cf924efde58a8df11438"
+  url "https://github.com/giggs-lynx/pinentry-dispatch/releases/download/v0.2.1/pinentry-dispatch-0.2.1-aarch64-apple-darwin.tar.gz"
+  sha256 "f2b53a1a2596479970ecfde975e0e355304438a496d959d946cbc4705124b5f8"
   license "MIT"
 
   depends_on :macos
